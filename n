@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaf ya, Sayang</title>
+    <style>
+        /* Reset margin dan padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+        }
+
+        .card {
+            background-color: #fff;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #ee9ca7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ffdde1;
+            color: #333;
+        }
+
+        /* Animasi untuk fade in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Maaf ya, Sayang ❤️</h1>
+        <p>
+            Aku tahu aku mungkin sudah mengecewakanmu. <br>
+            Tapi aku benar-benar minta maaf dari hati yang paling dalam.
+        </p>
+        <button onclick="showLove()">Klik untuk Maafin Aku 😊</button>
+        <p id="response" style="margin-top: 15px; font-size: 1.2em; color: #333;"></p>
+    </div>
+
+    <script>
+        function showLove() {
+            const responseText = "Aku sayang kamu, terima kasih sudah memaafkan ❤️";
+            document.getElementById("response").innerText = responseText;
+        }
+    </script>
+</body>
+</html>
